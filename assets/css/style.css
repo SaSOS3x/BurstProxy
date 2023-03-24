@@ -161,12 +161,12 @@ header{
     justify-content: center;
     width: 100%;
 }
-.about__text__1 h1{
+.about__main__text h1{
     font-weight: 700;
     font-size: 40px;
     line-height: 48px;
 }
-.about__text__2 h2{
+.about__main__text h2{
     font-weight: 700;
     font-size: 20px;
     line-height: 22px;
