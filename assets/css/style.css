@@ -22,7 +22,9 @@ a{
 }
 
 /*HEADER****************************************************************/
-
+.about__block__df{
+    
+}
 .head__wrapper{
     padding-left: calc(70px + (325 - 70) * ((100vw - 325px) / (1920 - 350))); /*px*/
     padding-right: calc(70px + (325 - 70) * ((100vw - 325px) / (1920 - 350))); /*px*/
@@ -150,6 +152,46 @@ header{
 }
 .zind1{
     z-index: 1;
+}
+
+/*ABLOUT US*************************************/
+.about__block__on__line__little__and__medium{
+    display: flex;
+    
+}
+.about__img{
+    width: 95px;
+    height: 95px; 
+}
+.about__block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 3px 8px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+}
+.block__little{
+    width: 263px;/*PX*/
+    height: 264px;/*PX*/
+    
+}
+.block__medium{
+    width: 400px;/*PX*/
+    height: 264px;/*PX*/
+}
+.block__large{
+    width: 347px;/*PX*/
+    height: 553px;/*PX*/
+}
+.callculation__proxy{
+    justify-content: center;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 291px;
+    height: 52.01px;
 }
 
 /*МЕДИАССЫЛКИ РЕШАЮТ**********************************/
