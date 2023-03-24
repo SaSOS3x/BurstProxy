@@ -154,7 +154,7 @@ header{
     z-index: 1;
 }
 
-/*ABLOUT US*************************************/
+/*ABUOT US*************************************/
 .About{
     margin-top: 175px; /*PX*/
     display: flex;
@@ -163,14 +163,16 @@ header{
 }
 .about__main__text h1{
     font-weight: 700;
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 40px; /*PX*/
+    line-height: 48px; /*PX*/
+    margin-bottom: 35px; /*PX*/
 }
 .about__main__text h2{
     font-weight: 700;
-    font-size: 20px;
-    line-height: 22px;
+    font-size: 20px; /*PX*/
+    line-height: 22px; /*PX*/
     letter-spacing: 0.15em;
+    margin-bottom: 35px; /*PX*/
 }
 .about__cont2{
     display: flex;
@@ -183,16 +185,29 @@ header{
     display: flex;
 }
 .button__callculation__proxy{
+    display: flex;
     flex-grow: 1;
+    align-items: flex-end;
+    
 }
+.button__callculation__proxy a{
+    color: #0A1522;
+}
+.button__callculation__proxy a:hover{
+    background-color: #0A1522;
+    color: #FFFFFF;
+    transition: 0.2s;
+}
+.callculation__proxy{
+    margin-bottom: 25px;
+}
+
 .about__img{
     width: 95px;    /*PX*/
     height: 95px;   /*PX*/
 }
 .about__blocks{
     display: flex;
-    width: 1084px; /*PX*/
-    height: 553px; /*PX*/
 }
 .about__block{
     display: flex;
@@ -202,21 +217,26 @@ header{
     text-align: center;
     box-shadow: 3px 8px 6px rgba(0, 0, 0, 0.25); /*PX*/
     border-radius: 25px; /*PX*/
-    
+    padding: 0 30px 0 30px; /*PX*/
 }
 .block__little{
     width: 263px;/*PX*/
     height: 264px;/*PX*/
+    margin-right: 35px; /*PX*/
+    margin-bottom: 25px; /*PX*/
 }
 .block__medium{
     width: 400px;/*PX*/
     height: 264px;/*PX*/
- 
+    margin-right: 35px; /*PX*/
+    margin-bottom: 25px; /*PX*/
 }
 .block__large{
     width: 347px;/*PX*/
     height: 553px;/*PX*/
+    padding-top: 32px; /*PX*/
 }
+
 .callculation__proxy{
     justify-content: center;
     background: #FFFFFF;
@@ -240,13 +260,13 @@ header{
         margin-left: 450px;
     }
     .wrapper{
-        padding-left: 325px;
-        padding-right: 325px;
+        padding-left: 350px;
+        padding-right: 350px;
         width: 1920px; /*Максимальный размер*/
     }
     .head__wrapper{
-        padding-left: 325px;
-        padding-right: 325px;
+        padding-left: 350px;
+        padding-right: 350px;
         width: 1920px; /*Максимальный размер*/
     }
 }
