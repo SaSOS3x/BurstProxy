@@ -535,6 +535,8 @@ header{
     display: flex;
     justify-content: space-between;
     width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
     margin: 0 20px 0 20px;
 }
 .payments__back{
@@ -603,6 +605,57 @@ header{
 }
 .payment__text p{
     text-align: center;
+}
+
+/*FAQ*************************************************/
+.FAQ{
+    display: flex;
+    justify-content: center;
+    padding-top: 200px;
+    width: 100%;
+}
+.FAQ__cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.FAQ__cont h1{
+    font-weight: 700;
+    font-size: 30px;
+    color: #0A1522;
+    margin-bottom: 100px;
+}
+.FAQ__cont div:last-child{
+    margin-bottom: 0px;
+}
+.question__cont{
+    width: 1068px;
+    height: 80px;
+    border: 1px solid #4350E9;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+.question__subcont{
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.question__subcont p{
+    font-weight: 700;
+    font-size: 30px;
+    color:#4350E9;
+}
+.strelk__cont{
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+.none{
+    display: none;
 }
 
 /*МЕДИАССЫЛКИ РЕШАЮТ**********************************/
