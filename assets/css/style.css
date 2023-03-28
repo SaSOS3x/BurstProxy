@@ -42,6 +42,7 @@ header{
     position: fixed;
     display: flex;
     justify-content: center;
+    z-index: 3;
 }
 .logo__cont{
     display: flex;
@@ -252,6 +253,255 @@ header{
 .about__block p{
     font-weight: 500;
     margin-top: 13px; /*PX*/
+}
+
+/****************************************НАЧАЛО НОВОГО РАЗДЕЛА****************************************/
+
+.s3{
+    width: 100%;
+    padding-top: 200px; /*PX*/
+    padding-bottom: 200px; /*PX*/
+    display: flex;
+    justify-content: center;
+}
+.s3__prim{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.s3__mtx{
+    font-weight: 700;
+    font-size: 30px; /*PX*/
+    color: #0A1522;
+}
+.s3__slave{
+    display: flex;
+    margin-top: 150px; /*PX*/
+}
+.s3__slave div:last-child{
+    margin-right: 0px;
+}
+.s3__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px; /*PX*/
+    height: 340px; /*PX*/
+    box-shadow: 3px 8px 6px rgba(0, 0, 0, 0.25); /*PX*/
+    border-radius: 25px; /*PX*/
+    background-color: white;
+    margin-right: 100px;
+}
+.s3__mcardtxcont{
+    display: flex;
+    margin-bottom: 40px; /*PX*/
+    width: 270px;
+}
+.s3__cardtx{
+    font-weight: 700;
+    font-size: 26px;
+    color: #000000;
+    flex-grow: 1;
+}
+.s3__cardprice{
+    font-weight: 700;
+    font-size: 26px;
+    color: #E15665;
+}
+.s3__ccardtxcont{
+    margin-bottom: 30px;
+}
+.s3__cardtxblock{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.s3__cardtxblockend{
+    display: flex;
+    align-items: center;
+}
+.s3__cardtxline{
+    width: 36px;
+    height: 1px;
+    background-color: black;
+    margin-right: 10px;
+}
+.s3__ccardtxcont p{
+    font-weight: 700;
+    font-size: 16px;
+    color: #000000;
+}
+.s3__cardtbtn{
+    width: 240px;
+    height: 50px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00BE7A;
+}
+.s3__cardtbtn p{
+    font-weight: 700;
+    font-size: 26px;
+    color: white;
+}
+
+/****************************************НАЧАЛО НОВОГО РАЗДЕЛА****************************************/
+
+.s4{
+    width: 100%;
+    padding-bottom: 200px; /*PX*/
+    display: flex;
+    justify-content: center;
+}
+.s4__prim{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.s4__mtx{
+    font-weight: 700;
+    font-size: 30px; /*PX*/
+    color: #0A1522;
+    margin-bottom: 150px; /*PX*/
+}
+.s4__calculator{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 544px; /*PX*/
+    width: 1068px; /*PX*/
+    border: 1px #4350E9 solid; /*PX*/
+    border-radius: 20px; /*PX*/
+    box-shadow: 3px 8px 6px rgba(0, 0, 0, 0.25); /*PX*/
+}
+.s4__calcontprim{
+    display: flex;
+}
+.s4__calcontprim div{
+    margin-right: 75px; /*PX*/
+}
+.s4__calcontprim div:last-child{
+    margin-right: 0px;
+}
+.s4__calctx{
+    font-weight: 500;
+    font-size: 20px; /*PX*/
+    color: black;
+    margin-bottom: 10px; /*PX*/
+}
+.s4__calcont input{
+    width: 258px; /*PX*/
+    height: 37px; /*PX*/
+    border: 1px solid #4350E9; /*PX*/
+    border-radius: 20px; /*PX*/
+    color: #4350E9;
+    margin-bottom: 50px; /*PX*/
+    background-color: white;
+    padding-left: 15px; /*PX*/
+    padding-right: 20px; /*PX*/
+    font-weight: 700;
+    font-size: 16px; /*PX*/
+    color: #4350E9;
+}
+.s4__calcont select{
+    width: 258px; /*PX*/
+    height: 37px; /*PX*/
+    border: 1px solid #4350E9; /*PX*/
+    border-radius: 20px; /*PX*/
+    color: #4350E9;
+    margin-bottom: 50px; /*PX*/
+    background-color: white;
+    padding-left: 15px; /*PX*/
+    padding-right: 20px; /*PX*/
+    font-weight: 700;
+    font-size: 16px; /*PX*/
+    color: #4350E9;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+.s4__select{
+    width: 258px; /*PX*/
+    height: 37px; /*PX*/
+    border: 1px solid #4350E9; /*PX*/
+    border-radius: 20px; /*PX*/
+    color: #4350E9;
+    user-select: none;
+    background-color: white;
+    position: absolute;
+    transition: 0.2s;
+}
+.s4__option{
+    color: #4350E9;
+    width: 256px; /*PX*/
+    height: 35px;
+    padding-left: 15px; /*PX*/
+    display: flex;
+    align-items: center;
+    user-select: none;
+    background-color: white;
+    transition: 0.2s;
+    border-radius: 20px;
+}
+.bordertop{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.borderbottom{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.s4__option:hover p{
+    color: #0A1522;
+    transition: 0.2s;
+}
+.s4__option p{
+    font-weight: 700;
+    font-size: 16px; /*PX*/
+    color: #4350E9;
+}
+.s4__calcont select::-ms-expand{
+    display: none;
+}
+.s4__calcont option{
+    background-color: white;
+}
+.s4__calcont label{
+    width: 258px;
+    height: 15px;
+    background-color: white;
+    border: none;
+}
+.s4__optx{
+    font-weight: 700;
+    font-size: 16px; /*PX*/
+    color: #4350E9;
+}
+.none{
+    display: none;
+}
+.active1{
+    margin-top: 37px;
+}
+.active2{
+    margin-top: 74px;
+}
+.active3{
+    margin-top: 111px;
+}
+.active4{
+    margin-top: 148px;
+}
+.resize5{
+    height: 180px;
+    transition: 0.2s;
+}
+.resize3{
+    height: 110px;
+    transition: 0.2s;
 }
 /*МЕДИАССЫЛКИ РЕШАЮТ**********************************/
 
