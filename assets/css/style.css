@@ -636,6 +636,7 @@ header{
     cursor: pointer;
     margin-bottom: 20px;
     padding-top: 20px;
+    transition: 0.2s;
 }
 .question__subcont{
     padding-left: 20px;
@@ -654,9 +655,6 @@ header{
     flex-grow: 1;
     justify-content: flex-end;
 }
-.none{
-    display: none;
-}
 .FAQ__didnt__question{
     margin-top: 60px;
     font-size: 20px;
@@ -666,6 +664,13 @@ header{
     color: #000000;
     display: inline;
     border-bottom: 2px solid #000000;
+}
+.strelk__cont img{
+    transition: 0.2s;
+}
+.rotate180{
+    transform: rotate(180deg);
+    transition: 0.2s;
 }
 
 /* FOOTER*********************************************/
