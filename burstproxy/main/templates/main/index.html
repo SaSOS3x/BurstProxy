@@ -1,0 +1,444 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BurstProxy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+</head>
+<body>
+    <header>
+        <div class="head__wrapper">
+            <div class="head__cont">
+
+                <div class="logo__cont">
+                    <img src="{% static 'main/img/logo_text.svg' %}" alt="logo_text">
+                </div>
+                <div class="site__nav">
+                    <a href="#"><p>Главная</p></a>
+                    <a href="#"><p>О нас</p></a>
+                    <a href="#"><p>Тарифы</p></a>
+                    <a href="#"><p>FAQ</p></a>
+                    <a href="#"><p>Калькулятор прокси</p></a>
+                    <a href="#"><p>Блог</p></a>
+                </div>
+                <div class="reglog__cont">
+                    <p>Войти</p>
+                    <div class="reg__btn">
+                        <p>Регистрация</p>
+                    </div>
+                </div>
+                    
+            </div>
+        </div>
+    </header>
+
+    <section class="main">
+        <div class="wrapper">
+            <div class="main__primcont">
+                
+                <div class="zind1">
+                    <div class="main__cont">
+                        <h1>Успей всегда и везде</h1>
+                        <p>Успей открыть любую страницу, в любой точке мира - вместе с BurstProxy</p>
+                    </div>
+                    <div class="main__btn">
+                        <p>Вперед</p>
+                    </div>
+                </div>
+
+                <div class="dragon__cont">
+                    <img src="{% static 'main/img/dragon.png' %}" alt="dragon">
+                </div>
+    
+            </div>
+            
+        </div>
+    </section>
+    
+    <section class="About">
+        <div class="wrapper">
+            <div class="about__cont">
+                <div class="about__main__text">
+                    <h1>О нас</h1>
+                </div>
+                <div class="about__cont2">
+                    <div class="about__main__text">
+                        <h2>Наш сервис предоставляет большой выбор мобильных прокси:</h2>
+                    </div>
+                    <div class="about__blocks">
+                        <div class="about__block__little__and__medium">
+                            <div class="about__block__on__line__little__and__medium">
+                                <div class="about__block block__little">
+                                    <img class="about__img" src="{% static 'main/img/head_1.svg' %}" alt="Error">
+                                    <h1>Готовые тарифы</h1>
+                                    <p>для тех, кому нужен прокси быстро</p>
+                                </div>
+                                <div class="about__block block__medium">
+                                    <img class="about__img" src="{% static 'main/img/head_2.svg' %}" alt="Error">
+                                    <h1>Создание своего тарифа</h1>
+                                    <p>Гибкая настройка тарифа в нашем калькуляторе прокси</p>
+                                </div>
+                            </div>
+                            <div class="about__block__on__line__little__and__medium">
+                                <div class="about__block block__little">
+                                    <img class="about__img" src="{% static 'main/img/head_3.svg' %}" alt="Error">
+                                    <h1>Поддержка 24/7</h1>
+                                    <p>Вы можете задать нам вопрос в любое время</p>
+                                </div>
+                                <div class="about__block block__medium">
+                                    <img class="about__img" src="{% static 'main/img/head_4.svg' %}" alt="Error">
+                                    <h1>Неограниченный трафик</h1>
+                                    <p>Пользуйтесь нашими прокси 24/7</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about__large__solo">
+                            <div class="about__block block__large">
+                                <img class="about__img" src="{% static 'main/img/head_5.svg' %}" alt="Error">
+                                <h1>Гибкая ротация</h1>
+                                <p>Ротация от 2 до 5 минут, настроить ее вы можете в нашем калькуляторе прокси или выбрать тариф с наиболее подходящей для вас ротацией</p>
+                                <div class="button__callculation__proxy">
+                                    <a href="" class="callculation__proxy">
+                                        <p>Калькулятор прокси</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="s3">
+        <div class="wrapper">
+            <div class="s3__prim">
+            
+                <p class="s3__mtx">Тарифы</p>
+                <div class="s3__slave">
+                    <div class="s3__card">
+                        <div class="s3__mcardtxcont">
+                            <p class="s3__cardtx">Общий канал</p>
+                            <p class="s3__cardprice">610₽</p>
+                        </div>
+                        <div class="s3__ccardtxcont">
+                            <div class="s3__cardtxblock">
+                                <div class="s3__cardtxline"></div>
+                                <p>Канал 100мб/с</p>
+                            </div>
+                            <div class="s3__cardtxblock">
+                                <div class="s3__cardtxline"></div>
+                                <p>Смена 2 минуты</p>
+                            </div>
+                            <div class="s3__cardtxblock">
+                                <div class="s3__cardtxline"></div>
+                                <p>До 100 потоков</p>
+                            </div>
+                            <div class="s3__cardtxblockend">
+                                <div class="s3__cardtxline"></div>
+                                <p>∞ Трафик</p>
+                            </div>
+                        </div>
+                        <div class="s3__cardtbtn">
+                            <p>Купить</p>
+                        </div>
+                    </div>
+                    <div class="s3__card">
+                        <div class="s3__mcardtxcont">
+                            <p class="s3__cardtx">Приватный</p>
+                            <p class="s3__cardprice">3105₽</p>
+                        </div>
+                        <div class="s3__ccardtxcont">
+                            <div class="s3__cardtxblock">
+                                <div class="s3__cardtxline"></div>
+                                <p>Канал 100мб/с</p>
+                            </div>
+                            <div class="s3__cardtxblock">
+                                <div class="s3__cardtxline"></div>
+                                <p>Выбор смены</p>
+                            </div>
+                            <div class="s3__cardtxblock">
+                                <div class="s3__cardtxline"></div>
+                                <p>Анонимный</p>
+                            </div>
+                            <div class="s3__cardtxblockend">
+                                <div class="s3__cardtxline"></div>
+                                <p>∞ Трафик</p>
+                            </div>
+                        </div>
+                        <div class="s3__cardtbtn">
+                            <p>Купить</p>
+                        </div>
+                    </div>
+                    <div class="s3__card">
+                        <div class="s3__mcardtxcont">
+                            <p class="s3__cardtx">Мультипорт</p>
+                            <p class="s3__cardprice">610₽</p>
+                        </div>
+                        <div class="s3__ccardtxcont">
+                            <div class="s3__cardtxblock">
+                                <div class="s3__cardtxline"></div>
+                                <p>Канал 100мб/с</p>
+                            </div>
+                            <div class="s3__cardtxblock">
+                                <div class="s3__cardtxline"></div>
+                                <p>Потоки на выбор</p>
+                            </div>
+                            <div class="s3__cardtxblock">
+                                <div class="s3__cardtxline"></div>
+                                <p>Специальный</p>
+                            </div>
+                            <div class="s3__cardtxblockend">
+                                <div class="s3__cardtxline"></div>
+                                <p>∞ Трафик</p>
+                            </div>
+                        </div>
+                        <div class="s3__cardtbtn">
+                            <p>Купить</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="s4">
+        <div class="wrapper">
+            <div class="s4__prim">
+                <p class="s4__mtx">Калькулятор прокси</p>
+                <div class="s4__calculator">
+                    <div class="s4__calcontprim">
+                        <div class="s4__calcont">
+                            <p class="s4__calctx">Количество каналов</p>
+                            <input type="text">
+                            <p class="s4__calctx">Тип каналов</p>
+                            <select name="" id="">
+                                <option value="Test"></option>
+                            </select>
+                            <p class="s4__calctx">Срок аренды</p>
+                            <div class="s4__select" onclick="s2click()" id="s4__s2">
+                                <div class="s4__option borders" onclick="s2i3o1click()" id="s4__s2i3o1"><p>1 день</p></div>
+                                <div class="s4__option none" onclick="s2i3o2click()" id="s4__s2i3o2"><p>1 неделя</p></div>
+                                <div class="s4__option none" onclick="s2i3o3click()" id="s4__s2i3o3"><p>2 недели</p></div>
+                                <div class="s4__option none" onclick="s2i3o4click()" id="s4__s2i3o4"><p>1 месяц</p></div>
+                                <div class="s4__option none" onclick="s2i3o5click()" id="s4__s2i3o5"><p>3 месяца</p></div>
+                            </div>
+                        </div>
+                        <div class="s4__calcont">
+                            <p class="s4__calctx">Ротация</p>
+                            <select name="" id="">
+                                <option value="Test"></option>
+                            </select>
+                            <p class="s4__calctx">Промокод</p>
+                            <input type="text">
+                            <p class="s4__calctx">Тип прокси</p>
+                            <select name="" id="">
+                                <option class="s4__optx" value="Test"><p class="s4__optx">Test</p></option>
+                            </select>
+                        </div>
+                        <div class="s4__calcont">
+                            <p class="s4__calctx">Скорость</p>
+                            <select name="" id="">
+                                <option value="Test"></option>
+                            </select>
+                            <p class="s4__calctx">Количество прокси</p>
+                            <input type="text">
+                            <p class="s4__calctx">Оператор</p>
+                            <div class="s4__select" onclick="s6click()" id="s4__s6">
+                                <div class="s4__option borders" onclick="s6i3o1click()" id="s4__s6i3o1"><p>МТС</p></div>
+                                <div class="s4__option none" onclick="s6i3o2click()" id="s4__s6i3o2"><p>Биллайн</p></div>
+                                <div class="s4__option none" onclick="s6i3o3click()" id="s4__s6i3o3"><p>Мегафон</p></div>
+                                <div class="s4__option none" onclick="s6i3o4click()" id="s4__s6i3o4"><p>Теле2</p></div>
+                                <div class="s4__option none" onclick="s6i3o5click()" id="s4__s6i3o5"><p>Любой</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <script></script>
+                    <div class="s4__calbut">
+                        <p>Приобрести</p>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </section>
+    <section class="Payment">
+        
+            <h1>Спобособы оплаты</h1>
+            <div class="payment__and__text">
+                <div class="payments">
+                    <div class="uniteller payments__back">
+                        <img class="uniteller__img" src="{% static 'main/img/uniteller.svg' %}" alt="error">
+                    </div>
+                    <div class="webmoney payments__back">
+                        <img class="webmoney__img" src="{% static 'main/img/webmoney.svg' %}" alt="error">
+                        <p class="webmoney__text">WebMoney</p>
+                    </div>
+                    <div class="mir payments__back">
+                        <img class="mit__img" src="{% static 'main/img/mir.png' %}" alt="error">
+                    </div>
+                    <div class="visa payments__back">
+                        <img class="visa__img" src="{% static 'main/img/visa.svg' %}" alt="error">
+                    </div>
+                    <div class="mastercard payments__back">
+                        <img class="mastercard__img" src="{% static 'main/img/mastercard.svg' %}" alt="error">
+                    </div>
+                </div>
+                <div class="payment__text">
+                    <p>Вы можете производить оплату на нашем сервисе с помошью российских и зарубежных банковских карт</p>
+                </div>
+            </div>
+        
+    </section>
+
+    <section class="FAQ">
+        <div class="wrapper">
+            <div class="FAQ__cont">
+                <h1>FAQ</h1>
+                <div class="question__cont" id="quest1" onclick="quest1click()">
+                    <div class="question__subcont">
+                        <p>Прокси какой геолокации вы предоставляете?</p>
+                        <div class="strelk__cont">
+                            <img class="arrow" src="{% static 'main/img/strelk.svg' %}" alt="strelk" id="arrow1">
+                        </div>
+                    </div>
+                    <p class="answer none" id="answer1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quam maxime molestias corporis soluta placeat sequi vel eum illo nemo aliquam dolor? Aperiam modi tempora vel alias, nostrum delectus ipsam!</p>
+                </div>
+                <div class="question__cont" id="quest2" onclick="quest2click()">
+                    <div class="question__subcont">
+                        <p>Как скоро я получу прокси?</p>
+                        <div class="strelk__cont">
+                            <img src="{% static 'main/img/strelk.svg' %}" alt="strelk" id="arrow2">
+                        </div>
+                    </div>
+                    <p class="answer none" id="answer2">Text</p>
+                </div>
+                <div class="question__cont" id="quest3" onclick="quest3click()">
+                    <div class="question__subcont">
+                        <p>Какая скорость у прокси?</p>
+                        <div class="strelk__cont">
+                            <img src="{% static 'main/img/strelk.svg' %}" alt="strelk" id="arrow3">
+                        </div>
+                    </div>
+                    <p class="answer none" id="answer3">Text</p>
+                </div>
+                <div class="question__cont" id="quest4" onclick="quest4click()">
+                    <div class="question__subcont">
+                        <p>Какие типы протоколов прокси у вас есть?</p>
+                        <div class="strelk__cont">
+                            <img src="{% static 'main/img/strelk.svg' %}" alt="strelk" id="arrow4">
+                        </div>
+                    </div>
+                    <p class="answer none" id="answer4">Text</p>
+                </div>
+                <div class="question__cont" id="quest5" onclick="quest5click()">
+                    <div class="question__subcont">
+                        <p>Есть ли лимит на трафик?</p>
+                        <div class="strelk__cont">
+                            <img src="{% static 'main/img/strelk.svg' %}" alt="strelk" id="arrow5">
+                        </div>
+                    </div>
+                    <p class="answer none" id="answer5">Text</p>
+                </div>
+                <div class="question__cont" id="quest6" onclick="quest6click()">
+                    <div class="question__subcont">
+                        <p>Что такое мультпорт и для чего он нужен?</p>
+                        <div class="strelk__cont">
+                            <img src="{% static 'main/img/strelk.svg' %}" alt="strelk" id="arrow6">
+                        </div>
+                    </div>
+                    <p class="answer none" id="answer6">Text</p>
+                </div>
+                <div class="question__cont" id="quest7" onclick="quest7click()">
+                    <div class="question__subcont">
+                        <p>IP-адреса уникальны или одинаковые?</p>
+                        <div class="strelk__cont">
+                            <img src="{% static 'main/img/strelk.svg' %}" alt="strelk" id="arrow7">
+                        </div>
+                    </div>
+                    <p class="answer none" id="answer7">Text</p>
+                </div>
+                <div class="question__cont" id="quest8" onclick="quest8click()">
+                    <div class="question__subcont">
+                        <p>В чем отличие приватного и обычного прокси?</p>
+                        <div class="strelk__cont">
+                            <img src="{% static 'main/img/strelk.svg' %}" alt="strelk" id="arrow8">
+                        </div>
+                    </div>
+                    <p class="answer none" id="answer8">Text</p>
+                </div>
+                <a href="" class="FAQ__didnt__question">
+                    <p>Не нашли ответ на свой вопрос?</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="wrapper">
+            <div class="footer__logo">
+                <img src="{% static 'main/img/logo.svg' %}" alt="">
+                <p>BURST PROXY</p>
+            </div>
+            <div class="footer__nav">
+                <ul>
+                    <li><a href=""><p>Главная</p></a></li>
+                    <li><a href=""><p>О нас</p></a></li>
+                    <li><a href=""><p>Блог</p></a></li>
+                    <li><a href=""><p>Тарифы</p></a></li>
+                    <li><a href=""><p>FAQ</p></a></li>
+                    <li><a href=""><p>Калькулятор прокси</p></a></li>
+                </ul>
+                <ul>
+                    <li><a href=""><p>Оферта</p></a></li>
+                    <li><a href=""><p>Лицензионное соглашение</p></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__line"></div>
+        <div class="wrapper">
+            <div class="footer__under">
+                <div class="footer__contacts">
+                    <p>Контакты:</p>
+                    <img class="" src="{% static 'main/img/telegram.svg' %}" alt="">
+                    <img class="footer__contacts__img" src="{% static 'main/img/gmail.svg' %}" alt="">
+                </div>
+                
+                <div class="footer__support__main__text">
+                    <p>Поддержка: burstproxy@support.com</p>
+                </div>
+            </div>
+            <div class="footer__payment">
+                <div class="footer__uniteller footer__payments__back ">
+                    <img class="footer__uniteller__img" src="{% static 'main/img/uniteller.svg' %}" alt="error">
+                </div>
+                <div class="footer__webmoney footer__payments__back footer__visa__mc__wm">
+                    <img class="footer__webmoney__img" src="{% static 'main/img/webmoney.svg' %}" alt="error">
+                    <p class="footer__webmoney__text">WebMoney</p>
+                </div>
+                <div class="footer__mir footer__payments__back footer__visa__mc__wm">
+                    <img class="footer__mir__img" src="{% static 'main/img/mir.png' %}" alt="error">
+                </div>
+                <div class="footer__visa footer__payments__back footer__visa__mc__wm">
+                    <img class="footer__visa__img" src="{% static 'main/img/visa.svg' %}" alt="error">
+                </div>
+                <div class="footer__mastercard footer__payments__back footer__visa__mc__wm">
+                    <img class="footer__mastercard__img" src="{% static 'main/img/mastercard.svg' %}" alt="error">
+                </div>
+                <div class="footer__support__secondary__text">
+                    <p>ИП Артемьев Александр Дмитриевич</p>
+                    <p>ОГРНИП 543346745745745</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{% static 'main/js/select.js' %}"></script>
+    <script src="{% static 'main/js/FAQ.js' %}"></script>
+</body>
+</html>
