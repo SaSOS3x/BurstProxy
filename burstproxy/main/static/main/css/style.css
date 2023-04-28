@@ -1,3 +1,18 @@
+@font-face {
+    font-family: Inter;
+    src: local("Inter-Bold"), url("{% static 'main/fonts/Inter-Bold.ttf' %}") format("truetype");
+    font-weight: 700;
+}
+@font-face {
+    font-family: Inter;
+    src: local("Inter-SemiBold"), url("{% static 'main/fonts/Inter-SemiBold.ttf' %}") format("truetype");
+    font-weight: 600;
+}
+@font-face {
+    font-family: Inter;
+    src: local("Inter-Medium"), url("{% static 'main/fonts/Inter-Medium.ttf' %}") format("truetype");
+    font-weight: 500;
+}
 /*GLOBAL****************************************************************/
 
 *{
@@ -9,7 +24,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     width: 100%;
 }
 a{
