@@ -1,12 +1,27 @@
 {% load static %}
 <section class="blogcontent">
     <div class="wrapper">
+        <!--ВЕСЬ КОНТЕНТ БЛОГА-->
         <div class="blogcontent__cont">
+            <!--НОВОСТИ БЛОГА-->
             <div class="blog__contentcont">
+                <!--НОВОСТЬ БЛОГА-->
                 <div class="blog__news">
-
+                    <div class="blogn__left">
+                        <img src="{% static 'blog/img/blogimg/0.jpg' %}" class="blog__photo" alt="0">
+                    </div>
+                    <div class="blogn__right">
+                        <div class="news__tag">
+                            <div class="news__tagtx">
+                                <p>Политика</p>
+                            </div>
+                        </div>
+                        <h1 class="news__title">Снова за свое...</h1>
+                        <p class="news__comment">ШОК! Маргит повысил налоговую ставку в Лейнделе! Что нас ждет в следующем году?</p>
+                    </div>
                 </div>
             </div>
+            <!--МЕНЮ БЛОГА СПРАВА-->
             <div class="blog__menucont">
                 <div class="blog__menu">
                     <div class="blog__conttop">
@@ -35,8 +50,10 @@
                         <h1>Фильтры</h1>
                     </div>
                     <div class="blogline_menu"></div>
-                    <div class="blog__contbottom">
+                    <div class="blog__contbottom2">
                         <a href="#"><p class="blog__filtertx">Сначала новые</p></a>
+                        <a href="#"><p class="blog__filtertx">Сначала старые</p></a>
+                        <a href="#"><p class="blog__filtertx">Популярные</p></a>
                     </div>
                 </div>
                 <div class="blog__menu">
