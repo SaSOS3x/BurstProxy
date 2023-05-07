@@ -10,4 +10,4 @@ def startblog(request):
 # Create your views here.
 
 def opennews(request):
-    return render(request, 'blog/newscontent.html')
+    return render(request, 'blog/news/Yandexsettings.html')
