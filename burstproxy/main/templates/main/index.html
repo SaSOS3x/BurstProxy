@@ -20,25 +20,28 @@
                     <img src="{% static 'main/img/logo_text.svg' %}" alt="logo_text">
                 </div>
                 <div class="site__nav">
-                    <a href="#"><p>Главная</p></a>
-                    <a href="#"><p>О нас</p></a>
-                    <a href="#"><p>Тарифы</p></a>
-                    <a href="#"><p>FAQ</p></a>
-                    <a href="#"><p>Калькулятор прокси</p></a>
-                    <a href="#"><p>Блог</p></a>
+                    <a href="#main"><p>Главная</p></a>
+                    <a href="#about"><p>О нас</p></a>
+                    <a href="#tarifs"><p>Тарифы</p></a>
+                    <a href="#faq"><p>FAQ</p></a>
+                    <a href="#calculate"><p>Калькулятор прокси</p></a>
+                    <a href="/blog/all"><p>Блог</p></a>
                 </div>
                 <div class="reglog__cont">
-                    <p>Войти</p>
-                    <div class="reg__btn">
-                        <p>Регистрация</p>
-                    </div>
+                    <a href="https://lteproxy.store/lk/auth"><p>Войти</p></a>
+                    <a href="https://lteproxy.store/lk/reg.php">
+                        <div class="reg__btn">
+                            <p>Регистрация</p>
+                        </div>
+                    </a>
+                    
                 </div>
                     
             </div>
         </div>
     </header>
 
-    <section class="main">
+    <section id="main" class="main">
         <div class="wrapper">
             <div class="main__primcont">
                 
@@ -61,7 +64,7 @@
         </div>
     </section>
     
-    <section class="About">
+    <section id="about" class="About">
         <div class="wrapper">
             <div class="about__cont">
                 <div class="about__main__text">
@@ -116,7 +119,7 @@
         </div>
     </section>
 
-    <section class="s3">
+    <section id="tarifs" class="s3">
         <div class="wrapper">
             <div class="s3__prim">
             
@@ -209,7 +212,7 @@
         
     </section>
 
-    <section class="s4">
+    <section id="calculate" class="s4">
         <div class="wrapper">
             <div class="s4__prim">
                 <p class="s4__mtx">Калькулятор прокси</p>
@@ -268,6 +271,7 @@
             </div>
         </div>   
     </section>
+
     <section class="Payment">
         
             <h1>Спобособы оплаты</h1>
@@ -297,7 +301,7 @@
         
     </section>
 
-    <section class="FAQ">
+    <section id="faq" class="FAQ">
         <div class="wrapper">
             <div class="FAQ__cont">
                 <h1>FAQ</h1>
@@ -308,7 +312,7 @@
                             <img class="arrow" src="{% static 'main/img/strelk.svg' %}" alt="strelk" id="arrow1">
                         </div>
                     </div>
-                    <p class="answer none" id="answer1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quam maxime molestias corporis soluta placeat sequi vel eum illo nemo aliquam dolor? Aperiam modi tempora vel alias, nostrum delectus ipsam!</p>
+                    <p class="answer none" id="answer1">Россия и Тайланд</p>
                 </div>
                 <div class="question__cont" id="quest2" onclick="quest2click()">
                     <div class="question__subcont">
@@ -317,7 +321,7 @@
                             <img src="{% static 'main/img/strelk.svg' %}" alt="strelk" id="arrow2">
                         </div>
                     </div>
-                    <p class="answer none" id="answer2">Text</p>
+                    <p class="answer none" id="answer2">Мы знаем как время дорого для вас, поэтому стараемся выдать прокси моментально. Большинство заказов выдается в автоматическом режиме, если ваш эмейл исключен из автовыдачи, подбор ИП адресов может занять несколько минут. Если прокси не были получены в течение 30 минут, обратитесь, пожалуйста, к консультанту на сайте.</p>
                 </div>
                 <div class="question__cont" id="quest3" onclick="quest3click()">
                     <div class="question__subcont">
@@ -326,7 +330,7 @@
                             <img src="{% static 'main/img/strelk.svg' %}" alt="strelk" id="arrow3">
                         </div>
                     </div>
-                    <p class="answer none" id="answer3">Text</p>
+                    <p class="answer none" id="answer3">У общего канала от 1.5 - 2 мб/с, у приватных прокси ограничений нет</p>
                 </div>
                 <div class="question__cont" id="quest4" onclick="quest4click()">
                     <div class="question__subcont">
@@ -335,7 +339,7 @@
                             <img src="{% static 'main/img/strelk.svg' %}" alt="strelk" id="arrow4">
                         </div>
                     </div>
-                    <p class="answer none" id="answer4">Text</p>
+                    <p class="answer none" id="answer4">HTTP и SOCKS5 прокси</p>
                 </div>
                 <div class="question__cont" id="quest5" onclick="quest5click()">
                     <div class="question__subcont">
@@ -344,7 +348,7 @@
                             <img src="{% static 'main/img/strelk.svg' %}" alt="strelk" id="arrow5">
                         </div>
                     </div>
-                    <p class="answer none" id="answer5">Text</p>
+                    <p class="answer none" id="answer5">Лимита на трафик нет</p>
                 </div>
                 <div class="question__cont" id="quest6" onclick="quest6click()">
                     <div class="question__subcont">
@@ -353,7 +357,7 @@
                             <img src="{% static 'main/img/strelk.svg' %}" alt="strelk" id="arrow6">
                         </div>
                     </div>
-                    <p class="answer none" id="answer6">Text</p>
+                    <p class="answer none" id="answer6">Мультипорт — это метод, при котором каждое новое соединение происходит с нового IP-адреса. Он подходит только для определенных задач, таких как парсинг однотипных данных, например запросов к API поисковиков или социальных сетей. Эта услуга является специализированной и не предоставляется всем сервисам.</p>
                 </div>
                 <div class="question__cont" id="quest7" onclick="quest7click()">
                     <div class="question__subcont">
@@ -362,7 +366,7 @@
                             <img src="{% static 'main/img/strelk.svg' %}" alt="strelk" id="arrow7">
                         </div>
                     </div>
-                    <p class="answer none" id="answer7">Text</p>
+                    <p class="answer none" id="answer7">Могут быть одинаковыми. Но они мобильные, нужно учитывать это. Уникальные мобильные адреса не нужны.</p>
                 </div>
                 <div class="question__cont" id="quest8" onclick="quest8click()">
                     <div class="question__subcont">
@@ -371,9 +375,9 @@
                             <img src="{% static 'main/img/strelk.svg' %}" alt="strelk" id="arrow8">
                         </div>
                     </div>
-                    <p class="answer none" id="answer8">Text</p>
+                    <p class="answer none" id="answer8">В обычном прокси присутствуют ограничения как по скорости, так и по соединениям, в приватных прокси они отсутсвуют</p>
                 </div>
-                <a href="" class="FAQ__didnt__question">
+                <a href="#footer" class="FAQ__didnt__question">
                     <p>Не нашли ответ на свой вопрос?</p>
                 </a>
             </div>
@@ -387,12 +391,12 @@
             </div>
             <div class="footer__nav">
                 <ul>
-                    <li><a href=""><p>Главная</p></a></li>
-                    <li><a href=""><p>О нас</p></a></li>
-                    <li><a href=""><p>Блог</p></a></li>
-                    <li><a href=""><p>Тарифы</p></a></li>
-                    <li><a href=""><p>FAQ</p></a></li>
-                    <li><a href=""><p>Калькулятор прокси</p></a></li>
+                    <li><a href="#main"><p>Главная</p></a></li>
+                    <li><a href="#about"><p>О нас</p></a></li>
+                    <li><a href="/blog/all"><p>Блог</p></a></li>
+                    <li><a href="#tarifs"><p>Тарифы</p></a></li>
+                    <li><a href="#faq"><p>FAQ</p></a></li>
+                    <li><a href="#calculate"><p>Калькулятор прокси</p></a></li>
                 </ul>
                 <ul>
                     <li><a href=""><p>Оферта</p></a></li>
@@ -403,7 +407,7 @@
         <div class="footer__line"></div>
         <div class="wrapper">
             <div class="footer__under">
-                <div class="footer__contacts">
+                <div class="footer__contacts" id="footer">
                     <p>Контакты:</p>
                     <img class="" src="{% static 'main/img/telegram.svg' %}" alt="">
                     <img class="footer__contacts__img" src="{% static 'main/img/gmail.svg' %}" alt="">

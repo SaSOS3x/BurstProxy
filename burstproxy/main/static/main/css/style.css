@@ -497,6 +497,7 @@ header{
 }
 .none{
     display: none;
+    transition: 0.2s;
 }
 .active1{
     margin-top: 37px;
@@ -645,13 +646,16 @@ header{
 }
 .question__cont{
     width: 1068px;
-    height: 80px;
+    min-height: 80px;
+    max-height: 200px;
     border: 1px solid #4350E9;
     border-radius: 15px;
     cursor: pointer;
     margin-bottom: 20px;
     padding-top: 20px;
     transition: 0.2s;
+    padding-right: 20px;
+
 }
 .question__subcont{
     padding-left: 20px;
@@ -686,6 +690,17 @@ header{
 .rotate180{
     transform: rotate(180deg);
     transition: 0.2s;
+}
+.answer{
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: 0.2s;
+
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+    color:#4350E9;
 }
 
 /* FOOTER*********************************************/

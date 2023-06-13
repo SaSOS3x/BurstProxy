@@ -5,23 +5,50 @@
         <div class="blogcontent__cont">
             <!--НОВОСТИ БЛОГА-->
             <div class="blog__contentcont">
-                <!--НОВОСТЬ БЛОГА-->
-                <a href="http://127.0.0.1:8000/blog/news">
+                <!--НОВОСТЬ БЛОГА**********************************************************************************************-->
+                {% for el in news %}
+                <a href="{{ el.include_templates }}" class="news__click">
                 <div class="blog__news">
                     <div class="blogn__left">
-                        <img src="{% static 'blog/img/blogimg/0.jpg' %}" class="blog__photo" alt="0">
+                        <img src="/static/blog/img/blogimg/{{el.photo}}" class="blog__photo" alt="0">
                     </div>
                     <div class="blogn__right">
                         <div class="news__tag">
+                            
+                            {% if el.tag_firefox == 1 %}
                             <div class="news__tagtx">
-                                <p>Политика</p>
+                                <p>Fierfox</p>
                             </div>
+                            {% endif %}
+                            {% if el.tag_Opera == 1 %}
+                            <div class="news__tagtx">
+                                <p>Opera</p>
+                            </div>
+                            {% endif %}
+                            {% if el.tag_tarifs == 1 %}
+                            <div class="news__tagtx">
+                                <p>Тарифы</p>
+                            </div>
+                            {% endif %}
+                            {% if el.tag_multiport == 1 %}
+                            <div class="news__tagtx">
+                                <p>Мультипорт</p>
+                            </div>
+                            {% endif %}
+                            {% if el.tag_yandex == 1 %}
+                            <div class="news__tagtx">
+                                <p>Yandex</p>
+                            </div>
+                            {% endif %}
+
                         </div>
-                        <h1 class="news__title">Снова за свое...</h1>
-                        <p class="news__comment">ШОК! Маргит повысил налоговую ставку в Лейнделе! Что нас ждет в следующем году?</p>
+                        <h1 class="news__title">{{ el.title }}</h1>
+                        <p class="news__comment">{{ el.short_text }}</p>
                     </div>
                 </div>
                 </a>
+                {% endfor %}
+                <!--************************************************************************************************************-->
             </div>
             <!--МЕНЮ БЛОГА СПРАВА-->
             <div class="blog__menucont">
@@ -31,7 +58,12 @@
                     </div>
                     <div class="blogline_menu"></div>
                     <div class="blog__contbottom">
-                        <a href="#"><p class="blog__cattx">Арбитраж трафика</p></a>
+                        <div class="blog__catcont">
+                            {% for el in categories %}
+                                <!--ДОБАВИЛ ССЫЛКУ-->
+                                <a href="/blog/category/{{ el.code }}"><p class="blog__cattx">{{ el.title }}</p></a>
+                            {% endfor %}
+                        </div>
                     </div>
                 </div>
                 <div class="blog__menu">
@@ -40,11 +72,14 @@
                     </div>
                     <div class="blogline_menu"></div>
                     <div class="blog__contbottom">
-                        <a href="#">
+                        {% for el in tag %}
+                        <!--ДОБАВИЛ ССЫЛКУ-->
+                        <a href="/blog/tag/{{ el.code }}" class="block__tag">
                             <div class="blog__tegcont">
-                                <p class="blog__tegtx">#Firefox</p>
+                                <p class="blog__tegtx">#{{ el.title }}</p>
                             </div>
                         </a>
+                        {% endfor %}
                     </div>
                 </div>
                 <div class="blog__menu">
@@ -53,9 +88,9 @@
                     </div>
                     <div class="blogline_menu"></div>
                     <div class="blog__contbottom2">
-                        <a href="#"><p class="blog__filtertx">Сначала новые</p></a>
-                        <a href="#"><p class="blog__filtertx">Сначала старые</p></a>
-                        <a href="#"><p class="blog__filtertx">Популярные</p></a>
+                        <a href="/blog/new/"><p class="blog__filtertx">Сначала новые</p></a>
+                        <a href="/blog/latest/"><p class="blog__filtertx">Сначала старые</p></a>
+                        <a href="/blog/popular/"><p class="blog__filtertx">Популярные</p></a>
                     </div>
                 </div>
                 <div class="blog__menu">
